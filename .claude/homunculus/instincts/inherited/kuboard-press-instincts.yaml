@@ -1,0 +1,259 @@
+# Instincts generated from https://github.com/gclm/kuboard-press
+# Generated: 2026-07-19T09:50:34.634Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: kuboard-press-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/gclm/kuboard-press
+---
+
+# Kuboard Press Commit Length
+
+## Action
+
+Keep commit messages concise (~8 characters)
+
+## Evidence
+
+- Average commit message length: 8 chars
+- Based on 1 commits
+
+---
+id: kuboard-press-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/kuboard-press
+---
+
+# Kuboard Press Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: kuboard-press-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/kuboard-press
+---
+
+# Kuboard Press Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: kuboard-press-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/gclm/kuboard-press
+---
+
+# Kuboard Press Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: kuboard-press-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/gclm/kuboard-press
+---
+
+# Kuboard Press Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: kuboard-press-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: kuboard-press-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: kuboard-press-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: kuboard-press-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: kuboard-press-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: kuboard-press-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: kuboard-press-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Test Location
+
+## Action
+
+Place test files in the separate 't' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders
+
+---
+id: kuboard-press-instinct-git-commit-format
+trigger: "When making a git commit"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: gclm/kuboard-press
+---
+
+# Kuboard Press Instinct Git Commit Format
+
+## Action
+
+Use a freeform commit message without a required prefix
+
+## Evidence
+
+- Pattern in commits.type
+- Pattern in commits.prefixes
+
